@@ -35,8 +35,6 @@ WHERE produit IS NULL
 con.close()
 
 if null_count > 0:
-    raise ValueError(
-        f"Données invalides : {null_count} lignes incomplètes"
-    )
+    raise ValueError(f"Données invalides : {null_count} lignes incomplètes")
 else:
     print("Validation réussie : schéma et qualité minimale OK")
